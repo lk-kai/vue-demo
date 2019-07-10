@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+Vue.config.productionTip = false
 
 // 导入mint-ui头部组件
 import MintUI from 'mint-ui'
@@ -10,8 +11,10 @@ Vue.use(MintUI)
 import './lib/mui/css/mui.min.css'
 import './lib/mui/css/icons-extra.css'
 
-Vue.config.productionTip = false
+import './scss/App.scss'
+import router from './router/router.js'
 
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')
