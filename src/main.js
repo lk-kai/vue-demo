@@ -11,7 +11,9 @@ Vue.use(MintUI)
 import './lib/mui/css/mui.min.css'
 import './lib/mui/css/icons-extra.css'
 
+// 导入css样式
 import './scss/App.scss'
+// 导入路由
 import router from './router/router.js'
 
 new Vue({
