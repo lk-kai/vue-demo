@@ -6,8 +6,9 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(MintUI)
 
-// 导入mui
+// 导入Mui样式
 import './lib/mui/css/mui.min.css'
+import './lib/mui/css/icons-extra.css'
 
 Vue.config.productionTip = false
 
