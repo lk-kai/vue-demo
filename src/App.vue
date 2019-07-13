@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="d-app-wrap">
+  <div id="app" class="app-container">
     <!-- 头部导航栏 -->
     <mt-header fixed title="黑马程序员vue项目"></mt-header>
     <!-- 底部导航栏 -->
@@ -33,19 +33,5 @@
 export default {};
 </script>
 
-<style lang="less" scoped>
-  .v-enter {
-    opacity: 0;
-    transform: translate(100%)
-  }
-  .v-leave-to {
-    position: absolute;
-    opacity: 0;
-    transform: translate(-100%)
-  }
-  .v-enter-active,
-  .v-leave-active {
-    transition: all .3s ease
-  }
-</style>
+
 

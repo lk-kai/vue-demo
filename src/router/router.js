@@ -4,6 +4,7 @@ import Home from '../components/layout/HomeContainer.vue'
 import shop from '../components/layout/ShopcarContainer.vue'
 import Member from '../components/layout/MemberContainer.vue'
 import Search from '../components/layout/SearchContainer.vue'
+import newlist from '../components/news/newlist.vue'
 Vue.use(VueRouter)
 const router = new VueRouter({
   routes : [
@@ -22,7 +23,10 @@ const router = new VueRouter({
     },{
       path : '/search',
       component : Search
-    },
+    },{
+      path : '/home/newlist',
+      component :newlist
+    }
   ],
   linkActiveClass :'mui-active'
 })

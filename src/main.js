@@ -14,10 +14,14 @@ import './lib/mui/css/icons-extra.css'
 // 导入css样式
 import './scss/App.scss'
 import './scss/Home.scss'
+import './scss/newlist.scss'
+
+// 引入全局过滤器
+import './Filter/timeFormat.js'
+
 // 导入路由
 import router from './router/router.js'
-
-// 2.1 我们不使用这个vue-resource的包，我们选择axios
+// 导入axios
 import axios from 'axios';
 axios.defaults.baseURL = 'http://www.liulongbin.top:3005';
 // 这是修改Vue的原型，可以让我们使用axios和vue-resource类似，直接使用 this.$http.xxx 就可以使用了
@@ -41,8 +45,6 @@ axios.interceptors.response.use(function (response) {
   console.log('所有失败响应 先走拦截器里--2：', error)
   return Promise.reject(error);
 });
-
-
 new Vue({
   render: h => h(App),
   router
