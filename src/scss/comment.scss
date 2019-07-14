@@ -1,0 +1,25 @@
+.cmt-container {
+  h3 {
+    font-size: 18px;
+  }
+  textarea {
+    font-size: 14px;
+    height: 85px;
+    margin: 0;
+  }
+
+  .cmt-list {
+    margin: 5px 0;
+    .cmt-item {
+      font-size: 13px;
+      .cmt-title {
+        line-height: 30px;
+        background-color: #ccc;
+      }
+      .cmt-body {
+        line-height: 35px;
+        text-indent: 2em;
+      }
+    }
+  }
+}

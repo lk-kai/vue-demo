@@ -5,6 +5,7 @@ import shop from '../components/layout/ShopcarContainer.vue'
 import Member from '../components/layout/MemberContainer.vue'
 import Search from '../components/layout/SearchContainer.vue'
 import newlist from '../components/news/newlist.vue'
+import newinfo from '../components/news/newinfo.vue'
 Vue.use(VueRouter)
 const router = new VueRouter({
   routes : [
@@ -26,6 +27,9 @@ const router = new VueRouter({
     },{
       path : '/home/newlist',
       component :newlist
+    },{
+      path:'/home/newsinfo/:id',
+      component :newinfo
     }
   ],
   linkActiveClass :'mui-active'

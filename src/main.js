@@ -15,6 +15,8 @@ import './lib/mui/css/icons-extra.css'
 import './scss/App.scss'
 import './scss/Home.scss'
 import './scss/newlist.scss'
+import './scss/newinfo.scss'
+import './scss/comment.scss'
 
 // 引入全局过滤器
 import './Filter/timeFormat.js'
