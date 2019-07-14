@@ -2,9 +2,9 @@
   <div class="cmt-container">
     <h3>发表评论</h3>
     <hr />
-    <textarea placeholder="请输入要BB的内容（做多吐槽120字）" maxlength="120"></textarea>
+    <textarea placeholder="请输入要BB的内容（做多吐槽120字）" maxlength="120" v-model="comm"></textarea>
 
-    <mt-button type="primary" size="large">发表评论</mt-button> 
+    <mt-button type="primary" size="large" @click="pushcomment">发表评论</mt-button>
 
     <div class="cmt-list">
       <div class="cmt-item" v-for="(item, i) in comments" :key="i">
@@ -20,10 +20,14 @@
 </template>
 
   <script>
+import Vue from "vue";
+import { Toast } from "mint-ui";
+Vue.component(Toast.name, Toast);
 export default {
   data() {
     return {
-      pageindex : 1,
+      comm: "", // 评论输入的内容
+      pageindex: 1,
       comments: []
     };
   },
@@ -34,7 +38,7 @@ export default {
   methods: {
     getcomment() {
       this.$http
-        .get("api/getcomments/" + this.id + "?pageindex="+this.pageindex)
+        .get("api/getcomments/" + this.id + "?pageindex=" + this.pageindex)
         .then(result => {
           if (result.status === 0) {
             // 每当获取新数据评论的时候不要把老数据清空,而是老数据拼接新数据
@@ -45,8 +49,30 @@ export default {
         });
     },
     getMore() {
-      this.pageindex++
-      this.getcomment()
+      this.pageindex++;
+      this.getcomment();
+    },
+    pushcomment() {
+      if (this.comm.trim().length == 0) {
+        Toast("评论内容不能为空!");
+      } else {
+        this.$http
+          .post("/api/postcomment/" + this.id, {
+            // add_time: new Date(),
+            content: this.comm.trim(),
+            user_name: "匿名用户"
+          })
+          .then(result => {
+            if (result.status == 0) {
+              this.comments.unshift({
+                add_time: new Date(),
+                content:this.comm,
+                user_name: "匿名用户"
+              });
+            }
+          })
+          .catch(err => {});
+      }
     }
   }
 };
