@@ -1,0 +1,53 @@
+[33mcommit 246259948d88410df77de4c713a4e039eaeb9018[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: lk-kai <806306842@qq.com>
+Date:   Tue Jul 16 16:41:42 2019 +0800
+
+    完成了图片分享,商品购买的列表页
+
+[33mcommit a2467c9f04e88aa19d981a88d78b56e446abdd1b[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: lk-kai <806306842@qq.com>
+Date:   Sun Jul 14 15:45:03 2019 +0800
+
+    完成提交评论功能
+
+[33mcommit 2da44900450bfe48c50911dadc71f9dd83b58572[m
+Author: lk-kai <806306842@qq.com>
+Date:   Sun Jul 14 14:43:24 2019 +0800
+
+    完成了评论功能
+
+[33mcommit 6cb7d29dc71fe31bdee4f2033c9db5a7333954ae[m
+Author: lk-kai <806306842@qq.com>
+Date:   Sat Jul 13 18:36:45 2019 +0800
+
+    完成首页的新闻资讯,添加了过滤器
+
+[33mcommit bb7c4c4b9ea0e3e40a39ac428fb0c8423285fdd7[m
+Author: lk-kai <806306842@qq.com>
+Date:   Sat Jul 13 11:41:02 2019 +0800
+
+    完成了首页的轮播图
+
+[33mcommit 1f80bb92edadd45665b0f9b04811702096a3a3b9[m
+Author: lk-kai <806306842@qq.com>
+Date:   Wed Jul 10 20:27:20 2019 +0800
+
+    优化路由跳转
+
+[33mcommit 1f3204dd01c9f00834465734e95ea9dba28f5457[m
+Author: lk-kai <806306842@qq.com>
+Date:   Wed Jul 10 20:20:14 2019 +0800
+
+    添加页面路由,完成跳转
+
+[33mcommit 9543f004d2f1f456c246f919e5a1005b9b6d3681[m
+Author: lk-kai <806306842@qq.com>
+Date:   Wed Jul 10 17:03:37 2019 +0800
+
+    导入mui字体样式库,修改底部图标
+
+[33mcommit 1cd8559b73f1bd9bed1cfb18ee7fdbbe8a5e2125[m
+Author: lk-kai <806306842@qq.com>
+Date:   Wed Jul 10 16:25:33 2019 +0800
+
+    第一次项目开始的时候--v1.0

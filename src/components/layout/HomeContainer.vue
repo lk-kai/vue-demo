@@ -1,10 +1,13 @@
 <template>
   <div>
-    <mt-swipe :show-indicators="false">
+    <!-- 轮播图组件 -->
+    <!-- <mt-swipe :show-indicators="false">
       <mt-swipe-item v-for="item in lunbotu" :key="item.id">
         <img :src="item.img" alt />
       </mt-swipe-item>
-    </mt-swipe>
+    </mt-swipe> -->
+    <swiper :lunbotu="lunbotu"></swiper>
+
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <router-link to="/home/newlist">
@@ -47,6 +50,7 @@
   </div>
 </template>
 <script>
+import swiper from '../subcomponents/swiper'
 import { Toast } from "mint-ui";
 export default {
   data() {
@@ -72,6 +76,9 @@ export default {
         }
       });
     }
+  },
+  components :{
+    swiper
   }
 };
 </script>
