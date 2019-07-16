@@ -69,6 +69,7 @@ export default {
                 content:this.comm,
                 user_name: "匿名用户"
               });
+              this.comm =''
             }
           })
           .catch(err => {});

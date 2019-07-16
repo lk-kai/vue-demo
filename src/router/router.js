@@ -6,6 +6,10 @@ import Member from '../components/layout/MemberContainer.vue'
 import Search from '../components/layout/SearchContainer.vue'
 import newlist from '../components/news/newlist.vue'
 import newinfo from '../components/news/newinfo.vue'
+import photolist from '../components/photos/photolist.vue'
+import photoinfo from '../components/photos/photoinfo'
+import goodslist from '../components/goods/goodslist'
+import goodslistinfo from '../components/goods/goodsinfo'
 Vue.use(VueRouter)
 const router = new VueRouter({
   routes : [
@@ -30,6 +34,18 @@ const router = new VueRouter({
     },{
       path:'/home/newsinfo/:id',
       component :newinfo
+    },{
+      path:'/home/photolist',
+      component : photolist
+    },{
+      path : '/home/photoinfo/:id',
+      component : photoinfo
+    },{
+      path : '/home/goodslist',
+      component : goodslist
+    },{
+      path : '/home/goodsinfo/:id',
+      component : goodslistinfo
     }
   ],
   linkActiveClass :'mui-active'
