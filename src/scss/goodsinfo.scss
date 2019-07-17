@@ -1,0 +1,28 @@
+.goodsinfo-container {
+  background-color: #eee;
+  overflow: hidden;
+
+  .now_price {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .mui-card-footer {
+    display: block;
+    button {
+      margin: 15px 0;
+    }
+  }
+
+  .ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    z-index: 99;
+    top: 390px;
+    left: 146px;
+  }
+}

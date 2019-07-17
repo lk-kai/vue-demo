@@ -2,22 +2,15 @@
   height: 200px;
 
   .mint-swipe-item {
-    &:nth-child(1) {
-      background-color: yellow
-    }
-
-    &:nth-child(2) {
-      background-color: red
-    }
-
-    &:nth-child(3) {
-      background-color: aqua
-    }
+    text-align: center;
 
     img {
-      width: 100%;
+      // width: 100%;
       height: 100%;
     }
-
   }
+}
+
+.full {
+  width: 100%;
 }
